@@ -5,7 +5,6 @@ import 'package:pixel_paper/wallpaper.dart';
 import 'package:lottie/lottie.dart';
 
 void main() {
-
   runApp(MyApp());
 }
 
@@ -13,11 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // theme: ThemeData(primaryIconTheme: IconThemeData(color: Colors.red)),?
-      // title: 'Splash Screen',
-      // theme: ThemeData(
-      //   primarySwatch: Colors.grey.shade100,
-      // ),
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -44,13 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         body: Stack(children: [
       Container(
-        decoration: BoxDecoration(color: Colors.white
-            // gradient: LinearGradient(
-            //     begin: Alignment.topCenter,
-            //     end: Alignment.bottomCenter,
-            //     colors: [Color(0xff070919), Color(0xff191b29)]
-            //     )
-            ),
+        decoration: BoxDecoration(color: Colors.white),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
       ),
@@ -88,18 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             )),
-
-            // Container(
-            //   child: Text(
-            //     "Wallpapers",
-            //     style: TextStyle(
-            //       color: Colors.blue.shade100,
-            //       fontFamily: 'roboto',
-            //       fontSize: 20,
-            //       fontWeight: FontWeight.w500,
-            //     ),
-            //   ),
-            // ),
 
             Container(height: 100, child: Lottie.asset('assets/load.json')),
             Spacer(),
